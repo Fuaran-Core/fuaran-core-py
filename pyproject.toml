@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fuaran-core"
+version = "0.0.0"
+description = "The Fuaran Core spine in Python: canonical JSON, the number form, content addresses, tree and op apply, the op-stream chain and the DAG."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.12"
+authors = [{ name = "Andrew J. Willshire" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.16,<0.17"]
+
+[project.urls]
+Repository = "https://github.com/Fuaran-Core/fuaran-core-py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fuaran_core"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
