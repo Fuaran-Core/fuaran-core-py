@@ -56,7 +56,7 @@ class Client:
     @classmethod
     def from_command_line(cls, line: str) -> Client:
         """Split a command line (the shape an environment variable carries) and start it."""
-        return cls(shlex.split(line, posix=False))
+        return cls(shlex.split(line))
 
     def close(self) -> None:
         """End the oracle's input and wait for it to exit."""

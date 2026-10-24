@@ -147,7 +147,7 @@ def oracle_command_line(core: Path) -> str:
             "no oracle: build it from the Core checkout (dotnet build tools/Fuaran.Core.Oracle.Cli -c Release) "
             "or set FUARAN_CORE_ORACLE to a command line that serves the protocol"
         )
-    return f'dotnet "{dll}"'
+    return f'dotnet "{dll.as_posix()}"'
 
 
 @pytest.fixture(scope="session")
