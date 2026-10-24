@@ -1,0 +1,2786 @@
+{
+  "kind": "hostCompliance",
+  "host": "fuaran-core-py",
+  "coreVersion": "0.41.0",
+  "rows": [
+    {
+      "row": "fold-confluence-total",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the lane fold (dag.fold) is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "slot-conflicts-agree",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the lane fold (dag.fold) is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "decode-total",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the wire node decoder is not in the spine: it is a wire's, not the spine's"
+        }
+      ]
+    },
+    {
+      "row": "decode-node-wf",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the wire node decoder is not in the spine: it is a wire's, not the spine's"
+        }
+      ]
+    },
+    {
+      "row": "decode-encode-roundtrip",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the wire node decoder is not in the spine: it is a wire's, not the spine's"
+        }
+      ]
+    },
+    {
+      "row": "lenient-agrees-off-policy",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the wire node decoder is not in the spine: it is a wire's, not the spine's"
+        }
+      ]
+    },
+    {
+      "row": "decode-perm-invariant",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the wire node decoder is not in the spine: it is a wire's, not the spine's"
+        }
+      ]
+    },
+    {
+      "row": "decode-node-order-invariant",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the wire node decoder is not in the spine: it is a wire's, not the spine's"
+        }
+      ]
+    },
+    {
+      "row": "perm-covers-reorder",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the wire node decoder is not in the spine: it is a wire's, not the spine's"
+        }
+      ]
+    },
+    {
+      "row": "duplicate-keys-break-order-invariance",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the wire node decoder is not in the spine: it is a wire's, not the spine's"
+        }
+      ]
+    },
+    {
+      "row": "no-null-ever",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the wire node decoder is not in the spine: it is a wire's, not the spine's"
+        }
+      ]
+    },
+    {
+      "row": "no-invokable-term",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the wire node decoder is not in the spine: it is a wire's, not the spine's"
+        }
+      ]
+    },
+    {
+      "row": "sentinel-inert",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the wire node decoder is not in the spine: it is a wire's, not the spine's"
+        }
+      ]
+    },
+    {
+      "row": "sentinel-tag-position-is-the-exception",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the wire node decoder is not in the spine: it is a wire's, not the spine's"
+        }
+      ]
+    },
+    {
+      "row": "decode-order-differential",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the wire node decoder is not in the spine: it is a wire's, not the spine's"
+        }
+      ]
+    },
+    {
+      "row": "fold-differential",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the lane fold (dag.fold) is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "decode-differential",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the wire node decoder is not in the spine: it is a wire's, not the spine's"
+        }
+      ]
+    },
+    {
+      "row": "parser-null-absorption",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "tree-independence-diamond",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "footprint-precision-ceiling",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "relocation-pairs-still-refused",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "footprint-ceiling-differential",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "footprint-in-differential",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "insert-breaks-id-uniqueness",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "tree-differential",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "tree-digest-preimage-injective",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "tree-digest-fields-recover-shape",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "tree-digest-differential",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "tree-algebra-batch-nesting",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "preorder-parent-first",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "chain-intact-verifies",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "chain-tamper-detected",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "chain-unconditional-break-classes",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "merge-id-parent-order-independent",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "chain-walker-differential",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "preimage-splices-unambiguous",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "op-codec-injective-certified",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "chain-envelope-parse",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "seq-numeral-code-certified",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "snapshot-replay-equivalence",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "compact-preserves-verify",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "snapshot-replay-differential",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "signed-head-binds-chain",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "signed-head-rejects-splice",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "signed-head-differential",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "parse-total",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "depth-bound-exact",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "int53-guard-exact",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "int53-guard-sound",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "int53-guard-conservative",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "error-kind-exhaustive",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "parser-distinct-member-names",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "parser-limited-at-no-bound-is-the-parser",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "reader-rebuilds-the-parse",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "parser-limit-never-reported-as-malformed",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "parser-string-bound-exact",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "parser-items-bound-exact",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "parser-differential",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "validator-decides-the-invariant",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "insert-subtree-check-closes-it",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "canonical-render-total",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the escape table has no manifest to carry an adoption record; the spine runs its 38 lines (its DECISIONS.md D4); the guarded renderer differential (wire.render) is not driven yet"
+        }
+      ]
+    },
+    {
+      "row": "canonical-form-roundtrip",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the escape table has no manifest to carry an adoption record; the spine runs its 38 lines (its DECISIONS.md D4); the guarded renderer differential (wire.render) is not driven yet"
+        }
+      ]
+    },
+    {
+      "row": "canon-parser-agreement",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the escape table has no manifest to carry an adoption record; the spine runs its 38 lines (its DECISIONS.md D4); the guarded renderer differential (wire.render) is not driven yet"
+        }
+      ]
+    },
+    {
+      "row": "canonical-parse-roundtrip",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the escape table has no manifest to carry an adoption record; the spine runs its 38 lines (its DECISIONS.md D4); the guarded renderer differential (wire.render) is not driven yet"
+        }
+      ]
+    },
+    {
+      "row": "canonical-form-injective",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the escape table has no manifest to carry an adoption record; the spine runs its 38 lines (its DECISIONS.md D4); the guarded renderer differential (wire.render) is not driven yet"
+        }
+      ]
+    },
+    {
+      "row": "canonical-form-deterministic",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the escape table has no manifest to carry an adoption record; the spine runs its 38 lines (its DECISIONS.md D4); the guarded renderer differential (wire.render) is not driven yet"
+        }
+      ]
+    },
+    {
+      "row": "canonical-render-not-injective",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the escape table has no manifest to carry an adoption record; the spine runs its 38 lines (its DECISIONS.md D4); the guarded renderer differential (wire.render) is not driven yet"
+        }
+      ]
+    },
+    {
+      "row": "no-null-rendered",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the escape table has no manifest to carry an adoption record; the spine runs its 38 lines (its DECISIONS.md D4); the guarded renderer differential (wire.render) is not driven yet"
+        }
+      ]
+    },
+    {
+      "row": "canonical-render-guard",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the escape table has no manifest to carry an adoption record; the spine runs its 38 lines (its DECISIONS.md D4); the guarded renderer differential (wire.render) is not driven yet"
+        }
+      ]
+    },
+    {
+      "row": "canon-guard-differential",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the escape table has no manifest to carry an adoption record; the spine runs its 38 lines (its DECISIONS.md D4); the guarded renderer differential (wire.render) is not driven yet"
+        }
+      ]
+    },
+    {
+      "row": "canon-differential",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the escape table has no manifest to carry an adoption record; the spine runs its 38 lines (its DECISIONS.md D4); the guarded renderer differential (wire.render) is not driven yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-unregistered-refused",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "policy-gate-before-body",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "policy-join-monotone",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-validate-before-invoke",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-envelope-three-outcomes",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-enumerate-is-registry",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-slot-hole-invocable-in-space",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-invocation-key-injective",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "function-totality-law",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "function-hygiene-law",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "function-effect-law",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "function-audit-effect-join",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "function-determinism-label-bijection",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-capture-records-declared",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-differential",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "propagation-dirty-sound",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "change propagation is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "propagation-dirty-least",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "change propagation is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "propagation-evalfrom-agrees",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "change propagation is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "propagation-evalfromwith-agrees",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "change propagation is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "propagation-evalfrom-minimal",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "change propagation is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "propagation-unknown-change-refused",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "change propagation is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "propagation-needed-least",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "change propagation is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "propagation-evalfor-agrees",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "change propagation is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "propagation-evalforwith-agrees",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "change propagation is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "propagation-evalfor-invokes-needed",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "change propagation is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "propagation-differential",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "change propagation is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "propagation-sort-computed",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "change propagation is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "propagation-evaluator-contract",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "change propagation is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-unregistered-refused",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-validate-before-resolve",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-envelope-three-outcomes",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-enumerate-is-registry",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-invocation-key-deterministic",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-required-is-non-null",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-invocation-key-injective",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-differential",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "canonical-digest-preimage-injective",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the escape table has no manifest to carry an adoption record; the spine runs its 38 lines (its DECISIONS.md D4); the guarded renderer differential (wire.render) is not driven yet"
+        }
+      ]
+    },
+    {
+      "row": "canonical-render-guard-strings",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the escape table has no manifest to carry an adoption record; the spine runs its 38 lines (its DECISIONS.md D4); the guarded renderer differential (wire.render) is not driven yet"
+        }
+      ]
+    },
+    {
+      "row": "canon-guard-strings-differential",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the escape table has no manifest to carry an adoption record; the spine runs its 38 lines (its DECISIONS.md D4); the guarded renderer differential (wire.render) is not driven yet"
+        }
+      ]
+    },
+    {
+      "row": "render-ordered-injective",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the escape table has no manifest to carry an adoption record; the spine runs its 38 lines (its DECISIONS.md D4); the guarded renderer differential (wire.render) is not driven yet"
+        }
+      ]
+    },
+    {
+      "row": "render-ordered-differential",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the escape table has no manifest to carry an adoption record; the spine runs its 38 lines (its DECISIONS.md D4); the guarded renderer differential (wire.render) is not driven yet"
+        }
+      ]
+    },
+    {
+      "row": "parser-accepts-only-well-formed-strings",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "parser-number-grammar",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "int53-guard-exact-on-the-grammar",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseInt53",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseRecursionDepth",
+          "cases": 13
+        },
+        {
+          "class": "vector-certified",
+          "family": "premiseStringModel",
+          "cases": 29
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        },
+        {
+          "class": "oracle-differential",
+          "model": "JsonParse",
+          "function": "json.parse",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "column-codec-image-valid",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        }
+      ]
+    },
+    {
+      "row": "column-codec-round-trip",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        }
+      ]
+    },
+    {
+      "row": "column-codec-literal-round-trip-false",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        }
+      ]
+    },
+    {
+      "row": "column-codec-differential",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        }
+      ]
+    },
+    {
+      "row": "decimal-text-canonical-idempotent",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        }
+      ]
+    },
+    {
+      "row": "decimal-text-one-number-one-text",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        }
+      ]
+    },
+    {
+      "row": "decimal-text-zero-unique",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        }
+      ]
+    },
+    {
+      "row": "decimal-text-order-is-the-numeric-order",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        }
+      ]
+    },
+    {
+      "row": "decimal-text-order-total",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        }
+      ]
+    },
+    {
+      "row": "decimal-text-sum-is-the-sum",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        }
+      ]
+    },
+    {
+      "row": "decimal-text-sum-canonical",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        }
+      ]
+    },
+    {
+      "row": "decimal-text-sum-commutative",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        }
+      ]
+    },
+    {
+      "row": "decimal-text-sum-associative",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        }
+      ]
+    },
+    {
+      "row": "decimal-text-sum-zero-identity",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        }
+      ]
+    },
+    {
+      "row": "decimal-text-refusal-exact",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        }
+      ]
+    },
+    {
+      "row": "decimal-text-differential",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        }
+      ]
+    },
+    {
+      "row": "tree-placement-lowers-to-insert-and-reorder",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "append-after-compact",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "compact-compose",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "key-index-rebuild-parity",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "verify-captures",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "replay-record",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "keyed-capture-chain",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "keyed-replay-by-key",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "compacted-stream-differential",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "capture-journal-differential",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "chain-tamper-evident-iff-hash-distinguishes",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "capability-register-total",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-wf-holes",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-invocation-key-deterministic",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-register-well-formed",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-bind-handlers-exact",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-bind-handlers-order-independent",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-pipeline-typecheck-topological",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-pipeline-illtyped-iff-refused",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-pipeline-evalfrom-agrees",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-pipeline-dirty-instance",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-codec-signature-roundtrip",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-codec-capability-roundtrip",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-codec-node-roundtrip",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-codec-invocation-roundtrip",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-codec-deferred-roundtrip",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-codec-invoke-error-roundtrip",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-codec-refusals-resolve",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-seam-codec-differential",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "capability-sections-differential",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability contract is not in the spine yet; the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-validate-widens",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-register-refuses-duplicate-params",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-invocation-key-page-injective",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-invocation-key-unshaped",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-register-refuses-shape",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-registry-lifecycle",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-codec-declaration-roundtrip",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-codec-result-roundtrip",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-codec-deferred-result-roundtrip",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-codec-error-roundtrip",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-codec-refusals-resolve",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "query-codec-differential",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "the capability and query seams are not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "propagation-topo-certificate",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "change propagation is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "propagation-evalfrom-certified",
+      "evidence": [
+        {
+          "class": "not-covered",
+          "reason": "change propagation is not in the spine yet"
+        }
+      ]
+    },
+    {
+      "row": "append-on-is-merge-all",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "merge-all-set-determined",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonChain",
+          "cases": 16
+        },
+        {
+          "class": "vector-certified",
+          "family": "skeletonDag",
+          "cases": 11
+        },
+        {
+          "class": "oracle-differential",
+          "model": "Chain",
+          "function": "chain.verify",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "field-codec-round-trip",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        }
+      ]
+    },
+    {
+      "row": "field-codec-plain-entry",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        }
+      ]
+    },
+    {
+      "row": "field-codec-differential",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decimal",
+          "cases": 53
+        },
+        {
+          "class": "vector-certified",
+          "family": "codecRefusals",
+          "cases": 56
+        }
+      ]
+    },
+    {
+      "row": "decode-layer-round-trip",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        }
+      ]
+    },
+    {
+      "row": "decode-layer-totality",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        }
+      ]
+    },
+    {
+      "row": "decode-layer-refusals-resolve",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        }
+      ]
+    },
+    {
+      "row": "decode-layer-differential",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "decodeRejects",
+          "cases": 47
+        }
+      ]
+    },
+    {
+      "row": "index-agrees-with-the-walk",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "index-freshness-tracks-change",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "index-fresh-on-build",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "index-differential",
+      "evidence": [
+        {
+          "class": "vector-certified",
+          "family": "skeletonApply",
+          "cases": 25
+        },
+        {
+          "class": "oracle-differential",
+          "model": "TreeOps",
+          "function": "tree.apply",
+          "inputs": 2000,
+          "seed": "0x5eed571"
+        }
+      ]
+    },
+    {
+      "row": "host-string-model",
+      "evidence": [
+        {
+          "class": "host-premise",
+          "probe": "premiseStringModel",
+          "cases": 29
+        }
+      ]
+    },
+    {
+      "row": "host-float-digits",
+      "evidence": [
+        {
+          "class": "host-premise",
+          "probe": "premiseFloatDigits",
+          "cases": 163
+        }
+      ]
+    },
+    {
+      "row": "host-int53",
+      "evidence": [
+        {
+          "class": "host-premise",
+          "probe": "premiseInt53",
+          "cases": 29
+        }
+      ]
+    },
+    {
+      "row": "host-sha256",
+      "evidence": [
+        {
+          "class": "host-premise",
+          "probe": "premiseSha256",
+          "cases": 17
+        }
+      ]
+    },
+    {
+      "row": "host-recursion-depth",
+      "evidence": [
+        {
+          "class": "host-premise",
+          "probe": "premiseRecursionDepth",
+          "cases": 13
+        }
+      ]
+    }
+  ]
+}

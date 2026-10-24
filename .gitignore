@@ -9,3 +9,7 @@ __pycache__/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Hypothesis writes no example database here (tests set database=None); the directory is
+# ignored in case a local run ever makes one.
+.hypothesis/

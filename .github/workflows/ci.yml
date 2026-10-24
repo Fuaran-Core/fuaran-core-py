@@ -1,0 +1,72 @@
+# Build, test and conformance gate for the Python Core spine.
+#
+# Layout: this repository and the Core checkout its conformance legs read sit side by side,
+#
+#     $GITHUB_WORKSPACE/
+#     ├── fuaran-core-py/   <- this repository
+#     └── fuaran-core/      <- Fuaran-Core/fuaran-core, AT the commit core-pin.json names
+#
+# so the legs resolve `../fuaran-core` with no override. The checkout is pinned: the spine
+# certifies against the vectors of one Core commit, and moving to another is a deliberate change
+# here (core-pin.json), never something a push to Core does to this build. The .NET SDK is set up
+# because the oracle differential builds the reference's oracle process from that checkout.
+#
+# The whole gate is run.ps1, so CI and the one-command entry point cannot diverge. The matrix
+# runs the floor (3.12) and the newest interpreter the package is used on.
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.12", "3.14"]
+    defaults:
+      run:
+        working-directory: fuaran-core-py
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: fuaran-core-py
+
+      - name: Read the Core pin
+        id: pin
+        run: |
+          echo "repository=$(jq -r .repository core-pin.json)" >> "$GITHUB_OUTPUT"
+          echo "sha=$(jq -r .sha core-pin.json)" >> "$GITHUB_OUTPUT"
+
+      - name: Check out Core at the pin
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ steps.pin.outputs.repository }}
+          ref: ${{ steps.pin.outputs.sha }}
+          path: fuaran-core
+
+      - name: Assert Core is where the legs resolve it
+        run: test -f ../fuaran-core/conformance/apply/manifest.json
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: fuaran-core/global.json
+
+      - name: Install the package and its dev tooling
+        run: python -m pip install --quiet -e ".[dev]"
+
+      - name: Gate (run.ps1)
+        shell: pwsh
+        run: ./run.ps1
